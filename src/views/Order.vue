@@ -1,8 +1,8 @@
 <template>
     <div>
         <h1>Order</h1>
- <b-table striped hover :items="products" :fields="fields" :per-page="pagesize" :current-page="pageindex"></b-table>
-  <b-pagination size="lg" :total-rows="products.length" v-model="pageindex" :per-page="pagesize">  </b-pagination>
+ <b-table striped hover :items="orders" :fields="fields" :per-page="pagesize" :current-page="pageindex"></b-table>
+  <b-pagination size="lg" :total-rows="orders.length" v-model="pageindex" :per-page="pagesize">  </b-pagination>
     </div>
 </template>
 <script>
@@ -13,7 +13,7 @@ export default {
   data() {
     return {
       message: "FInal Client By Tanawat Naja",
-      products: [],
+      orders: [],
       pagesize:10,
       pageindex:1,
       fields: [
@@ -40,7 +40,7 @@ export default {
       .get("https://quiet-chamber-68969.herokuapp.com/api/order/")
       .then(function(response) {
         console.log(response.data);
-        instace.products = response.data.data;
+        instace.orders = response.data.data;
       });
   }
 };
