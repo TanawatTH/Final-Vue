@@ -1,5 +1,5 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>Tanawat Monpipat SE 5930213007</h1>
   </div>
 </template>

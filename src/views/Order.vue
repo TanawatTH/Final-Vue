@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>customers</h1>
+        <h1>Order</h1>
  <b-table striped hover :items="products" :fields="fields" :per-page="pagesize" :current-page="pageindex"></b-table>
   <b-pagination size="lg" :total-rows="products.length" v-model="pageindex" :per-page="pagesize">  </b-pagination>
     </div>
@@ -8,13 +8,13 @@
 <script>
 import axios from "axios";
 export default {
-  name: "customers",
+  name: "order",
   components: {},
   data() {
     return {
-      message: "Project 2 By Tong",
+      message: "FInal Client By Tanawat",
       products: [],
-      pagesize:5,
+      pagesize:10,
       pageindex:1,
       fields: [
         { key: "order_id", sortable: true },
