@@ -12,7 +12,7 @@ export default {
   components: {},
   data() {
     return {
-      message: "FInal Client By Tanawat",
+      message: "FInal Client By Tanawat Naja",
       products: [],
       pagesize:10,
       pageindex:1,

@@ -20,7 +20,7 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
-      path: '/order',
+      path: '/Order',
       name: 'Order',
       component: Order
     },
